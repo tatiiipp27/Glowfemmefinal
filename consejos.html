@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consejos y Rutinas de Skin Care</title>
+  <style>
+
+     /*Todo el diseño del menú*/ 
+
+    .menu { 
+
+      background-color: #ffb8e0; 
+
+      display: flex; 
+
+      align-items: center; 
+
+      padding: 20px 50px; 
+
+      position: fixed; 
+
+      top: 0; 
+
+      left: 0; 
+
+      width: 100%; 
+
+      z-index: 1000; 
+
+    } 
+
+ 
+
+    .logo { 
+
+      width: 120px; 
+
+      height: 70px; 
+
+    } 
+
+ 
+
+    .menu ul { 
+
+      display: flex; 
+
+      gap: 20px; 
+
+      list-style-type: none; 
+
+      margin: 0; 
+
+      padding: 0; 
+
+    } 
+
+ 
+
+    .menu a { 
+
+      text-decoration: none; 
+
+      color: black; 
+
+    } 
+
+ 
+
+    .menu a:hover { 
+
+      font-weight: 900; 
+
+      color: black; 
+
+    } 
+
+    /* Estilo general del cuerpo de la página */
+    body {
+      background-color: #ffedfa;
+      font-family: Lucida, sans-serif;
+      padding: 20px;
+    }
+
+    /* Estilo de los títulos */
+    h1 {
+      text-align: center;
+      color: #be5985;
+      font-family: Franklin, sans-serif;
+    }
+
+    /* Contenedor principal de los consejos */
+    .seccion-consejos {
+  max-width: 900px;
+  margin: 150px auto 0 auto; /* centra el contenedor */
+}
+
+.fila {
+  display: flex;
+  justify-content: center;  /* centra las tarjetas */
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+    /* Alineación de la fila al centro */
+    .fila-centro {
+      justify-content: center;
+    }
+
+    /* Alineación de la fila a la izquierda */
+    .fila-izquierda {
+      justify-content: flex-start;
+    }
+
+    /* Estilo de cada tarjeta de consejo */
+    .tarjeta-consejo {
+      background-color: #ffffff;
+      width: 250px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    /* Imagen dentro de cada tarjeta */
+    .tarjeta-consejo img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+    /* Título de la tarjeta */
+    .tarjeta-consejo h3 {
+      font-family: Franklin, sans-serif;
+      color: #000;
+    }
+
+    /* Descripción de la tarjeta */
+    .tarjeta-consejo p {
+      color: #333;
+      font-family: Lucida, sans-serif;
+    }
+
+    /* Sección de videos */
+    .seccion-videos {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Contenedor de los iframes de video */
+    .contenedor-videos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    /* Tamaño de los videos */
+    .contenedor-videos iframe {
+      width: 300px;
+      height: 170px;
+    }
+
+    /* Pie de página */ 
+
+    .piedepagina { 
+
+      background-color: #ffb8e0; 
+
+      width: 100%; 
+
+      margin-top: 100px; 
+
+    } 
+
+ 
+
+    .links { 
+
+      display: flex; 
+
+      justify-content: space-between; 
+
+      padding: 40px 60px; 
+
+    } 
+
+ 
+
+    .marca img { 
+
+      width: 220px; 
+
+      height: 150px; 
+
+    } 
+
+ 
+
+    .marca h2 { 
+
+      font-size: 17px; 
+
+      color: #0e0d0d; 
+
+      margin: 0; 
+
+      padding-left: 26px; 
+
+    } 
+
+ 
+
+    .menu2 ul { 
+
+      list-style-type: none; 
+
+      padding: 0; 
+
+      margin: 0; 
+
+    } 
+
+ 
+
+    .menu2 li { 
+
+      margin-bottom: 10px; 
+
+    } 
+
+ 
+
+    .menu2 a { 
+
+      text-decoration: none; 
+
+      color: #0e0d0d; 
+
+      font-size: 16px; 
+
+    } 
+
+ 
+
+    .menu2 a:hover { 
+
+      font-weight: 900; 
+
+      color: black; 
+
+    } 
+
+ 
+
+    .copyright { 
+
+      background-color: #be5985; 
+
+      text-align: center; 
+
+      padding: 15px 0; 
+
+    } 
+
+ 
+
+    .copyright h1 { 
+
+      font-size: 20px; 
+
+      color: #FFEDFA; 
+
+      margin: 0; 
+
+    } 
+
+ 
+
+    /* Responsive */ 
+
+    @media (max-width: 768px) { 
+
+      .links { 
+
+        flex-direction: column; 
+
+        align-items: center; 
+
+        padding: 30px 20px; 
+
+        text-align: center; 
+
+      } 
+
+ 
+
+      .marca img { 
+
+        width: 180px; 
+
+        height: auto; 
+
+      } 
+
+ 
+
+      .marca h2 { 
+
+        font-size: 16px; 
+
+        padding-left: 0; 
+
+        margin-top: 10px; 
+
+      } 
+
+ 
+
+      .menu2 ul { 
+
+        margin-top: 20px; 
+
+      } 
+
+ 
+
+      .menu2 li { 
+
+        margin-bottom: 8px; 
+
+      } 
+
+ 
+
+      .menu2 a { 
+
+        font-size: 15px; 
+
+      } 
+
+ 
+
+      .copyright h1 { 
+
+        font-size: 16px; 
+
+      } 
+
+ 
+
+      .contenedor { 
+
+        gap: 30px; 
+
+        padding: 0 10px; 
+
+      } 
+
+ 
+
+      body { 
+
+        padding: 20px 10px; 
+
+      } 
+
+    } 
+  </style>
+</head>
+<body>
+
+   <!-- MENÚ SUPERIOR --> 
+
+  <div class="menu"> 
+
+    <img src="imgp/kattya/logotranspa.png" class="logo" alt="Logo GlowFemme"> 
+
+    <ul> 
+
+      <li><a href="index.html">Inicio</a></li> 
+
+      <li><a href="productos.html">Más vendidos</a></li> 
+
+      <li><a href="acné.html">Productos contra el acné</a></li> 
+
+      <li><a href="productospielgrasa.html">Productos para piel grasa</a></li> 
+
+      <li><a href="consejos.html">Consejos</a></li> 
+
+      <li><a href="somos.html">¿Quiénes somos?</a></li> 
+
+    </ul> 
+
+  </div> 
+
+  <!-- Título principal -->
+  <h1>Consejos para el cuidado de tu piel</h1>
+
+  <!-- Sección con las tarjetas de consejos -->
+  <div class="seccion-consejos">
+    
+    <!-- Primera fila: tres consejos alineados a la izquierda -->
+    <div class="fila fila-izquierda">
+      <div class="tarjeta-consejo">
+        <img src="imgp/keiry/Limpieza.jpg">
+        <h3>Limpiar tu rostro</h3>
+        <p>Usa un limpiador suave mañana y noche para eliminar impurezas y grasa.</p>
+      </div>
+
+      <div class="tarjeta-consejo">
+        <img src="imgp/keiry/Tonico.jpg">
+        <h3>Aplicar tónico facial</h3>
+        <p>Balancea el pH de tu piel y prepárala para los siguientes pasos.</p>
+      </div>
+      <div class="tarjeta-consejo">
+        <img src="imgp/keiry/Hidratante.jpg">
+        <h3>Hidratar la piel</h3>
+        <p>Elige una crema ligera para mantener tu piel nutrida sin sensación grasosa.</p>
+      </div>
+    </div>
+
+    <!-- Segunda fila: dos consejos centrados -->
+    <div class="fila fila-centro">
+      <div class="tarjeta-consejo">
+        <img src="imgp/keiry/Protector.jpg">
+        <h3>Protección solar</h3>
+        <p>El protector solar evita el envejecimiento prematuro y las manchas.</p>
+      </div>
+      <div class="tarjeta-consejo">
+        <img src="imgp/keiry/Constancia.jpg">
+        <h3>Constancia</h3>
+        <p>Seguir tu rutina diariamente es clave para ver resultados reales.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de videos de YouTube -->
+  <div class="seccion-videos">
+    <h1>Rutinas de Skin Care</h1>
+    <p>A continuación, estos videos te pueden ayudar a crear una rutina perfecta de Skin Care para el cuidado de tu piel con los productos adecuados.</p>
+
+    <!-- Tres videos embebidos -->
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/k9Yo5vYv-B4?si=ilQxw9rdnHarkD52" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/5CKdpeYO1b4?si=UEjYmEFubNfBE22V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/Ca902HtbX6Q?si=HaRUk7lCFJf3jFss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <!-- Información de pie de página--> 
+
+  <footer class="piedepagina"> 
+
+    <div class="links"> 
+
+      <div class="marca"> 
+
+        <img src="imgp/kattya/logotranspa.png" alt="Logo GlowFemme"> 
+
+        <h2>El arte de cuidar tu piel</h2> 
+
+      </div> 
+
+ 
+
+      <div class="menu2"> 
+
+        <ul> 
+
+          <li><a href="index.html">Inicio</a></li> 
+
+          <li><a href="productos.html">Más vendidos</a></li> 
+
+          <li><a href="acné.html">Productos contra el acné</a></li> 
+
+          <li><a href="productospielgrasa.html">Productos para piel grasa</a></li> 
+
+          <li><a href="consejos.html">Consejos</a></li> 
+
+          <li><a href="somos.html">¿Quiénes somos?</a></li> 
+
+        </ul> 
+
+      </div> 
+
+    </div> 
+
+ 
+
+    <div class="copyright"> 
+
+      <h1>Copyright 2025 GlowFemme</h1> 
+
+    </div> 
+
+  </footer> 
+
+ 
+
+</body>
+</html>
+

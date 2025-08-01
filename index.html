@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+
+/*Reglas generales de toda la página*/
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+/*Todo el diseño del menú*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 93%;
+    position: absolute;
+}
+.logo{
+    width: 120px;
+    height: 70px;
+}
+.menu ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.menu a{
+    text-decoration: none;
+     color:#FFFDFC;
+}
+.menu a:hover{
+    font-weight: 900;
+    color: #BE5985;
+}
+.menu:hover{
+    background-color: #FFEDFA;
+}
+.menu:hover a {
+    color: #BE5985;
+}
+/*Diseño de la parte de portada*/
+.portada{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imgp/kattya/imagenfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    width: 100%;
+}
+.portada h1{
+    color:#FFFDFC;
+    margin:0;
+    padding-left: 30%;
+    padding-top: 12%;
+    font-size: 90px;
+}
+.portada p{
+    color:#FFFDFC;
+    margin:0;
+    padding-left: 37%;
+    padding-bottom: 16%;
+    font-size: 28px;
+}
+.boton1{
+    color:#FFEDFA;
+    text-decoration: none;
+    background-color: #EC7FA9;
+    padding: 10px;
+    display:grid;
+}
+.boton1 a{
+    padding-left: 30px;
+}
+
+/*Aqui van los productos más vendidos*/
+.infoproductos h2{
+    font-size: 45px;
+    text-align: center;
+}
+.infoproductos p{
+    font-size: 20px;
+    text-align: center;
+}
+.productosimagenes{
+    display: flex;
+}
+.imagen-1 img{
+    width: 250px;
+    height: 350px;
+    padding-left:90px;
+}
+.imagen-1 h3{
+    font-size: 20px;
+    color:#0e0d0d;
+    padding-left:98px;
+}
+.imagen-2 img{
+    width: 250px;
+    height: 350px;
+    padding-left: 200px;
+}
+.imagen-2 h3{
+    font-size: 20px;
+    color:#0e0d0d;
+    padding-left: 200px;
+}
+.imagen-3 img{
+    width: 300px;
+    height: 350px;
+    padding-left: 150px
+}
+.imagen-3 h3{
+    font-size: 20px;
+    color:#0e0d0d;
+    padding-left: 230px
+}
+.boton2 {
+    color: #FFEDFA;
+    text-decoration: none;
+    max-width: 170px;
+    min-height: 50px;
+    background-color: #EC7FA9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 45%;
+}
+
+.boton2 a {
+    padding: 0;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #FFEDFA;
+    margin-top: 50px;
+}
+
+/*Contenido de opiniones*/
+#opi{
+    font-size: 45px;
+    text-align: center;
+}
+#info{
+    font-size: 20px;
+    text-align: center;
+}
+.opinionescontenido{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 30px;
+}
+
+.opinionescontenido div {
+    background-color: #ffe6f0;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.opiniones img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #EC7FA9;
+    margin-bottom: 10px;
+}
+
+.opiniones h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #BE5985;
+}
+
+.opiniones p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+/* Pie de página */ 
+.piedepagina { 
+    background-color: #ffb8e0; 
+    width: 100%;
+} 
+.links { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 40px 60px; 
+} 
+.marca img{ 
+    width: 220px; 
+    height: 150px; 
+} 
+.marca h2 { 
+    font-size: 17px; 
+    color: #0e0d0d; 
+    margin: 0; 
+    padding-left: 26px;
+} 
+.menu2 ul { 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+} 
+.menu2 li { 
+    margin-bottom: 10px; 
+}
+.menu2 a { 
+    text-decoration: none; 
+    color: #0e0d0d; 
+    font-size: 16px; 
+} 
+.menu2 a:hover { 
+    font-weight: 900; 
+    color: black; 
+} 
+.copyright h1 { 
+    font-size: 20px; 
+    color:#FFEDFA; 
+} 
+.copyright { 
+    background-color: #be5985; 
+    text-align: center; 
+    padding: 15px 0; 
+} 
+    </style>
+    
+</head>
+<body>
+
+<!--Aquí va toda la información del menú-->
+    <div class="menu">
+<img src="imgp/kattya/logotranspa.png" class="logo">
+<ul>
+    <li><a href="index.html"> Inicio </a></li>
+    <li><a href="productos.html"> Más vendidos </a></li>
+    <li><a href="acné.html"> Productos contra el acné </a></li>
+    <li><a href="productospielgrasa.html"> Productos para piel grasa </a></li>
+    <li><a href="consejos.html"> Consejos </a></li>
+    <li><a href="somos.html"> ¿Quiénes somos? </a></li>
+</ul>
+    </div>
+
+<!--Esta es la parte de la portada con su información-->
+    <header>
+    <div class="portada">
+        <h1> GlowFemme </h1>
+        <p> El arte de cuidar tu piel </p>
+        <a href="somos.html" class="boton1"> ¿Quiénes somos? </a>
+    </div>
+    </header>
+
+<!--Sección de productos más vendidos-->
+    <section class="productos">
+        <div class="infoproductos">
+    <h2> Nuestros productos más <br> vendidos </h2>
+    <p> 
+    ¿Quieres conocer nuestros mejores y más vendidos productos? 
+    </p>
+    <hr>
+        </div>
+
+<div class="productosimagenes">
+    <div class="imagen-1">
+        <img src="imgp/kattya/Cerave.jpg">
+        <h3> Cerave foaming cleanser</h3>
+    </div>
+
+            <div class="imagen-2">
+                <img src="imgp/kattya/Joseon.jpg" alt="">
+                <h3> Beauty of Joseon Relief Sun SPF 50+</h3>
+            </div>
+
+            <div class="imagen-3">
+                <img src="imgp/kattya/Vichy.jpg">
+                <h3> Vichy Mineral 89</h3>
+            </div>
+
+        </div>
+
+        <div>
+            <a href="productos.html" class="boton2"> MÁS PRODUCTOS </a>
+        </div>
+
+    <hr>
+
+    </section>
+
+    <!--Sección de opiniones-->
+
+    <section class="opiniones">
+
+        <h2 id="opi">Conoce opiniones de nuestros clientes </h2>
+        <p id="info"> Tu opinión es lo más importante para nosotros. He aquí algunas de estas de <br>
+        nuestros clientes frecuentes. </p>
+
+        <div class="opinionescontenido">
+
+            <div class="opinion-1">
+                <img src="imgp/kattya/Amanda.jpg">
+                <h3> Amanda Seyfried</h3>
+                <p>
+                    "Sus productos han mejorado mi piel y mi vida. No puedo imaginarme una mejor distribuidora".
+                </p>
+            </div>
+
+            <div class="opinion-2">
+                <img src="imgp/kattya/Jun.jpg">
+                <h3> Lee Jun Young </h3>
+                <p>
+                    "GlowFemme traspasa fronteras y géneros. Perfecto para cualquier mujer y hombre, de cualquier país".
+                </p>
+            </div>
+
+            <div class="opinion-3">
+                <img src="imgp/kattya/Emma.jpg">
+                <h3> Emma Stone</h3>
+                <p>
+                    "¡Económicos e increíbles! GlowFemme es la definición de perfección". 
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+    </section>
+
+    <!--Información de pie de página -->
+
+    <footer class="piedepagina">
+
+                <div class="links">
+
+                    <div class="marca">
+                        <img src="imgp/kattya/logotranspa.png">
+                        <h2> El arte de cuidar tu piel </h2>
+                    </div>
+
+                    <div class="menu2">
+                        <ul>
+                            <li><a href="index.html"> Inicio </a></li>
+                            <li><a href="productos.html"> Más vendidos </a></li>
+                            <li><a href="acné.html"> Productos contra el acné </a></li>
+                            <li><a href="productospielgrasa.html"> Productos para piel grasa </a></li>
+                            <li><a href="consejos.html"> Consejos </a></li>
+                            <li><a href="somos.html"> ¿Quiénes somos? </a></li> 
+                        </ul>
+                    </div>
+
+            </div>
+
+            <div class="copyright">
+                <h1> Copyright 2025 GlowFemme </h1>
+            </div>
+
+    </footer>
+    
+</body>
+</html>

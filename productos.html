@@ -1,0 +1,274 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Productos más vendidos</title> 
+    <style> 
+    /*Todo el diseño del menú*/ 
+.menu{ 
+    background-color: #ffb8e0;
+    display: flex;
+    align-items: center;
+    padding: 20px 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{ 
+    width: 85px; 
+    height: 70px; 
+} 
+.menu ul{ 
+    display: flex; 
+    gap: 20px; 
+    list-style-type: none; 
+    margin:0; 
+    padding:0; 
+} 
+.menu a{ 
+    text-decoration: none; 
+     color:black; 
+} 
+.menu a:hover{ 
+    font-weight: 900; 
+    color: black; 
+}  
+body {  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+  margin: 0;  
+  padding: 40px;  
+  background-color: #ffedfa;  
+} 
+.contenedor {  
+  display: flex;  
+  justify-content: center;  
+  gap: 100px;  
+  flex-wrap: wrap;  
+} 
+.tarjeta {  
+  background-color: #ffffff;  
+  border-radius: 12px;  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  
+  width: 300px;  
+  text-align: center;  
+  overflow: hidden;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: space-between; 
+} 
+.tarjeta img {  
+  width: 100%;  
+  height: auto; 
+}  
+.tarjeta h3 {  
+  margin: 20px 10px 10px;  
+  font-size: 20px;  
+  font-weight: bold;  
+  color: #000;  
+}  
+.tarjeta p {  
+  margin: 0 20px 20px;  
+  font-size: 16px;  
+  color: #333;  
+}  
+/*estos son botones*/ 
+.btn {  
+  background-color: #be5985;  
+  color: white;  
+  font-weight: bold;  
+  border: none;  
+  border-radius: 30px;  
+  padding: 12px 20px;  
+  margin: 0 20px 20px;  
+  cursor: pointer;  
+  transition: background-color 0.3s;  
+}  
+/*este es el hover del boton*/ 
+.btn:hover{  
+  background-color: #ec7fa9;  
+}
+    .gfe{
+margin-top: 120px;
+text-align: center;
+color: #be5985;
+margin-bottom: 60px;
+    }
+    /* Pie de página */ 
+.piedepagina { 
+    background-color: #ffb8e0; 
+    width: 100%;
+    margin-top: 70px;
+} 
+.links { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 40px 60px; 
+} 
+.marca img{ 
+    width: 200px; 
+    height: 150px; 
+} 
+.marca h2 { 
+    font-size: 17px; 
+    color: #0e0d0d; 
+    margin: 0; 
+    padding-left: 26px;
+} 
+.menu2 ul { 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+} 
+.menu2 li { 
+    margin-bottom: 10px; 
+}
+.menu2 a { 
+    text-decoration: none; 
+    color: #0e0d0d; 
+    font-size: 16px; 
+} 
+.menu2 a:hover { 
+    font-weight: 900; 
+    color: black; 
+} 
+.copyright h1 { 
+    font-size: 20px; 
+    color:#FFEDFA; 
+} 
+.copyright { 
+    background-color: #be5985; 
+    text-align: center; 
+    padding: 15px 0; 
+}
+    </style> 
+</head> 
+<body> 
+  <!--Aquí va toda la información del menú--> 
+    <div class="menu"> 
+      <img src="imgp/nahomy/glowlogo.png" class="logo" alt="Logo GlowFemme">
+        <ul> 
+            <li><a href="index.html"> Inicio </a></li> 
+            <li><a href="productos.html"> Más vendidos </a></li> 
+            <li><a href="acné.html"> Productos contra el acné </a></li> 
+            <li><a href="productospielgrasa.html"> Productos para piel grasa </a></li>
+            <li><a href="#"> Consejos </a></li> 
+            <li><a href="somos.html"> ¿Quiénes somos? </a></li> 
+        </ul> 
+    </div>
+<h2 class="gfe">Nuestros productos más vendidos</h2>
+         <div class="contenedor">  
+    <!-- Producto 1 -->  
+    <div class="tarjeta">  
+      <img src="https://merryderma.com.pk/wp-content/uploads/2020/11/CeraVe-Foaming-Facial-Cleanser-16oz.jpg">  
+      <h3>Cerave Foaming Cleanser</h3>  
+      <p>Gel limpiador transparente que se transforma en espuma al aplicarlo.</p>  
+      <button class="btn">$32.01</button>  
+    </div>  
+     <!-- Producto 2 -->  
+    <div class="tarjeta">  
+      <img src="https://www.vichyusa.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-vichy-master-catalog/default/dwfc8759c1/product/Mineral89/NEW-%20Vichy-Mineral-89-Hyaluronic-Acid-Face-Serum-50-ml-3337875543248-PDP-1%20(2).jpg?sw=720&sh=750&sm=cut&sfrm=jpg&q=70">  
+      <h3>Vichy Mineral 89</h3>  
+      <p>Suero con Ácido Hialurónico puro y Agua Volcánica de Vichy con minerales.</p>  
+      <button class="btn">$29.99</button>  
+    </div>  
+    <!-- Producto 3 -->  
+    <div class="tarjeta">  
+      <img src="https://medpak.shop/cdn/shop/files/beauty-of-joseon-relief-sun-rice-probiotics-spf-50-50-ml-50512757162326.jpg?v=1685953595&width=1500">  
+      <h3>Beauty of Joseon Relief Sun SPF 50+</h3>  
+      <p>Protector solar ligero y orgánico con arroz y probióticos. Apto para todo tipo de piel.</p>  
+      <button class="btn">$13.79</button>  
+    </div>  
+    <!--Producto 4--> 
+        <div class="tarjeta">  
+      <img src="https://m.media-amazon.com/images/I/61lw7881TNL._SL1500_.jpg">  
+      <h3>Pixi Glow Tonic</h3>  
+      <p>Tónico sin alcohol que afina los poros y calma la piel, dejándola más radiante y saludable.</p>  
+      <button class="btn">$29.50</button>  
+        </div>  
+    <!--Producto 5--> 
+        <div class="tarjeta">  
+      <img src="https://mcprod.ecom.clxdtc.com/media/catalog/product/1/5/15799-00-1.jpg?width=661&auto=webp">  
+      <h3>Hidratante de labios Burt's Bees</h3>  
+      <p>Bálsamo labial con aceite de granada rico en antioxidantes. Hidrata los labios secos.</p>  
+      <button class="btn">$3.99</button>  
+    </div> 
+      <!--Producto 6--> 
+        <div class="tarjeta">  
+      <img src="https://s3.amazonaws.com/savana.uploads/wp-content/uploads/2019/04/28130617/laneige_water_sleeping_mask_special_care.jpg">  
+      <h3>Water Sleeping Mask Laneige</h3>  
+      <p>Mascarilla coreana nocturna con niacinamida y probióticos para una piel súper hidratada y luminosa.</p>  
+      <button class="btn">$31.99</button>  
+    </div>  
+          <!--Producto 7--> 
+        <div class="tarjeta">  
+      <img src="https://i5.walmartimages.com/asr/219499cb-6e5c-4046-ad8d-7e7d9ea0e566.749e31fd9a19ebf1bd5b2be9236e8bcb.jpeg">  
+      <h3>Mario Badescu Drying Lotion</h3>  
+      <p>Tratamiento puntual que seca granitos durante la noche.</p>  
+      <button class="btn">$18.00</button>  
+    </div> 
+        <!--Producto 8--> 
+        <div class="tarjeta">  
+      <img src="https://images-1.eucerin.com/~/media/eucerin%20relaunch%20media/eucerin/local/latam/packshot/proteccion%20solar/69767-eucerin-sun-face-gel-cream-oil-control-fps50-50ml_packshot.jpg">  
+      <h3>Eucerin Oil Control Sun Gel-Cream</h3>  
+      <p>Protector solar SPF 50+ para piel grasa y con acné, que previene daños solares.</p>  
+      <button class="btn">$15.50</button>  
+    </div> 
+        <!--Producto 9--> 
+        <div class="tarjeta">  
+      <img src="https://down-my.img.susercontent.com/file/23bfc384ee925b5083e7b6b476857537">  
+      <h3>Clinique Moisture Surge</h3> 
+      <p>Protector solar SPF 50+ para piel grasa y con acné, que previene daños solares.</p>  
+      <button class="btn">$30.00</button> 
+    </div> 
+        <!--Producto 10--> 
+        <div class="tarjeta">  
+      <img src="https://www.thayers.com/-/media/project/loreal/brand-sites/thayers/americas/us/images/product/toners/rose-petal-facial-toner/thayers_-rose-toner-12oz_pack-shot_front_atf_0041507070035.jpg?rev=9df6e557fcbe4fa08eb90b910843f73e&w=900&hash=18A1C11FB7C5DD4520E1B37B54A1BB91">  
+      <h3>Thayers Rose Petal Facial Toner</h3> 
+      <p>Protector solar SPF 50+ para piel grasa y con acné, que previene daños solares.</p>  
+      <button class="btn">$10.95</button> 
+    </div> 
+        <!--Producto 11--> 
+        <div class="tarjeta">  
+      <img src="https://i5.walmartimages.com/asr/1fe75a9e-2556-4e2d-bf10-26dc2970db21.b093fbc5c29f4b1dcfc43f217f19deab.png">  
+      <h3>Aquaphor Lip Repair</h3> 
+      <p>Protector solar SPF 50+ para piel grasa y con acné, que previene daños solares.</p>  
+      <button class="btn">$5.25</button> 
+    </div>
+        <!--Producto 12--> 
+        <div class="tarjeta">  
+      <img src="https://i5.walmartimages.com/seo/ISDIN-Fusion-Water-Oil-Free-Sunscreen-Daily-Protection-Sfae-Eye-Tech-SPF50-50ml-1-69-oz_8c363478-ee80-46e6-91fd-50046c82e0d7.5947c9921a1a7736042f22f5fce076a2.jpeg">  
+      <h3>ISDIN Fusion Water SPF 50</h3> 
+      <p>Protector solar facial de fase acuosa, textura ultraligera, hidratación intensa y absorción rápida.</p>  
+      <button class="btn">$48.00</button> 
+    </div> 
+  </div>
+
+<!--Información de pie de página -->
+
+    <footer class="piedepagina">
+      <div class="links">
+          <div class="marca">
+        <img src="imgp/nahomy/glowlogo.png">
+        <h2> El arte de cuidar tu piel </h2>
+        </div>
+        <div class="menu2">
+            <ul>
+        <li><a href="index.html"> Inicio </a></li>
+        <li><a href="productos.html"> Más vendidos </a></li>
+        <li><a href="acné.html"> Productos contra el acné </a></li>
+        <li><a href="productospielgrasa.html"> Productos para piel grasa</a></li>
+        <li><a href="#"> Consejos</a></li>
+        <li><a href="somos.html"> ¿Quiénes somos? </a></li> 
+              </ul>
+  </div>
+        </div>
+      <div class="copyright">
+        <h1> Copyright 2025 GlowFemme </h1>
+        </div>
+
+    </footer>
+</body> 
+</html> 

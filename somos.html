@@ -1,0 +1,298 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>¿Quiénes somos?</title> 
+  <style>
+    /*Todo el diseño del menú*/ 
+.menu{ 
+    background-color: #ffb8e0;
+    display: flex;
+    align-items: center;
+    padding: 20px 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{ 
+    width: 85px; 
+    height: 70px; 
+} 
+.menu ul{ 
+    display: flex; 
+    gap: 20px; 
+    list-style-type: none; 
+    margin:0; 
+    padding:0; 
+} 
+.menu a{ 
+    text-decoration: none; 
+     color:black; 
+} 
+.menu a:hover{ 
+    font-weight: 900; 
+    color: black; 
+} 
+    body { 
+      font-family: 'Lucida Sans', sans-serif; 
+      margin: 0; 
+      padding: 40px;
+      background-color: #ffedfa; 
+    } 
+    .contenedor { 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      gap: 30px;
+    } 
+    .seccion { 
+      background-color: white; 
+      border-radius: 12px; 
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+      width: 80%; 
+      padding: 30px; 
+      text-align: center;
+      margin-top: 20px;
+    } 
+    .seccion h2 { 
+      color: #be5985; 
+      font-size: 24px; 
+      margin-bottom: 10px; 
+    } 
+    .seccion p { 
+      font-size: 16px; 
+      color: #333; 
+      line-height: 1.6; 
+    } 
+    .tarjetas { 
+      display: flex; 
+      justify-content: center; 
+      flex-wrap: wrap; 
+      gap: 40px; 
+      margin-top: 20px; 
+    } 
+    .miembro { 
+      background-color: #fff; 
+      border-radius: 12px; 
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+      width: 250px; 
+      padding: 15px; 
+      text-align: center; 
+    } 
+    .miembro img { 
+      width: 100%; 
+      border-radius: 12px; 
+    } 
+    .miembro h3 { 
+      color: #000; 
+      margin: 10px 0 4px; 
+      font-size: 18px; 
+    } 
+    .miembro p { 
+      color: #555; 
+      font-size: 14px; 
+      font-style: italic; 
+      margin-top: 0; 
+    }
+    h2 { 
+      color: #be5985; 
+      font-size: 24px; 
+      margin-bottom: 10px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .carrusel{
+        overflow:hidden;
+        position:relative;
+        width: 100%;
+        height: 140px;
+        margin-top: 40px;
+    }
+    .movimiento{
+        display: flex;
+        width: calc(250px * 10);
+        animation: scroll 20s linear infinite;
+        gap: 40px;
+    }
+    .logo-carrusel{
+        width: 150px;
+        height: 100;
+        object-fit: contain;
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-50%);
+        }
+    }
+    strong{
+        color: #be5985;
+    }
+    .glowinsta{
+        text-decoration: none;
+        color: #be5985;
+    }
+    .gfe{
+margin-top: 120px;
+    }
+    /* Pie de página */ 
+.piedepagina { 
+    background-color: #ffb8e0; 
+    width: 100%; 
+} 
+.links { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 40px 60px; 
+} 
+.marca img{ 
+    width: 200px; 
+    height: 150px; 
+} 
+.marca h2 { 
+    font-size: 17px; 
+    color: #0e0d0d; 
+    margin: 0; 
+    padding-left: 26px;
+} 
+.menu2 ul { 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+} 
+.menu2 li { 
+    margin-bottom: 10px; 
+}
+.menu2 a { 
+    text-decoration: none; 
+    color: #0e0d0d; 
+    font-size: 16px; 
+} 
+.menu2 a:hover { 
+    font-weight: 900; 
+    color: black; 
+} 
+.copyright h1 { 
+    font-size: 20px; 
+    color:#FFEDFA; 
+} 
+.copyright { 
+    background-color: #be5985; 
+    text-align: center; 
+    padding: 15px 0; 
+}
+  </style> 
+</head> 
+
+<body>
+  <!--Aquí va toda la información del menú--> 
+    <div class="menu"> 
+      <img src="imgp/kattya/logotranspa.png" class="logo" alt="Logo GlowFemme">
+        <ul> 
+            <li><a href="index.html"> Inicio </a></li> 
+            <li><a href="productos.html"> Más vendidos </a></li> 
+            <li><a href="acné.html"> Productos contra el acné </a></li> 
+            <li><a href="productospielgrasa.html"> Productos para piel grasa</a></li>
+            <li><a href="consejos.html"> Consejos </a></li> 
+            <li><a href="somos.html"> ¿Quiénes somos? </a></li>
+        </ul> 
+    </div>
+<h2 class="gfe">Sobre GlowFemme</h2>
+  <div class="contenedor"> 
+    <div class="seccion"> 
+      <h2>¿Quiénes somos?</h2> 
+      <p> 
+        En GlowFemme, somos una tienda distribuidora especializada en productos de skincare de alta calidad, seleccionados cuidadosamente para cuidar la salud y belleza de tu piel. 
+        Creemos que el cuidado de la piel no debe ser un lujo, sino parte de una rutina diaria accesible, efectiva y consciente. Por eso trabajamos con marcas reconocidas y fórmulas dermatológicamente comprobadas que se adaptan a todo tipo de piel y necesidades específicas. 
+      </p> 
+    </div> 
+    <div class="seccion"> 
+      <h2>Nuestra misión</h2> 
+      <p> 
+        Como fundadoras de GlowFemme, nuestra misión es transformar el cuidado de la piel en una experiencia real, accesible y consciente.  
+        Queremos ayudarte a construir una rutina que se adapte a ti, a tu estilo de vida y a lo que tu piel verdaderamente necesita, sin caer en promesas vacías ni modas pasajeras.  
+        Nos mueve la idea de que cuidar la piel es una forma de autocuidado, de conexión contigo misma, y también una forma de expresión y empoderamiento. Por eso seleccionamos marcas confiables, fórmulas efectivas y productos respaldados por ciencia, experiencia y amor propio. 
+      </p> 
+    </div>
+
+    <div class="seccion"> 
+      <h2>Lo que dice nuestro equipo</h2> 
+      <div class="tarjetas"> 
+        <div class="miembro"> 
+          <h3>Keiry Velasquez</h3> 
+          <p>"GlowFemme no solo me enseñó cosas nuevas, también me dio un equipo donde me siento apoyada y acompañada.</p> 
+        </div> 
+        <div class="miembro"> 
+          <h3>Tatiana Paniagua</h3> 
+          <p>"Diseñar para GlowFemme me enseñó a confiar en mi estilo y en mi equipo. No somos perfectos, pero cada paso lo damos con intención."</p> 
+        </div> 
+        <div class="miembro"> 
+          <h3>Nimsi Bernabé</h3> 
+          <p>"GlowFemme fue el espacio perfecto para compartir mis conocimientos. Todo lo que me imaginé lo hice realidad aquí."</p> 
+        </div> 
+            <div class="miembro"> 
+          <h3>Kattya Dominguez</h3> 
+          <p>"GlowFemme es el empujoncito que necesitaba para dejar de dudar de mis ideas. Me ha hecho valorar más lo que somos capaces de hacer."</p> 
+        </div> 
+            <div class="miembro"> 
+          <h3>Nahomy Gil</h3> 
+          <p>"Desde que comenzamos con GlowFemme, aprendí la importancia de creer en una idea, aunque al principio parezca imposible de ejecutar."</p> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+
+      <div class="aliadas"> 
+    <h2>Nuestras marcas aliadas</h2> 
+    <div class="carrusel"> 
+        <div class="movimiento"> 
+            <img src="https://www.loreal-finance.com/site/RA2014/img/desktop/data/carousels/logos/logo_vichy.png" class="logo-carrusel"> 
+            <img src="https://mma.prnewswire.com/media/1773618/CeraVe_Logo.jpg" class="logo-carrusel"> 
+            <img src="https://c.perfumesclub.com/images_web/brands/white/926.svg" class="logo-carrusel"> 
+            <img src="https://th.bing.com/th/id/R.58a0b1bce24c473c998d1a803063b219?rik=SJV7O8ucJv1RCQ&riu=http%3a%2f%2feclatbody.com%2fcdn%2fshop%2fcollections%2fbeauty-of-joseon-741540.webp%3fv%3d1699436310&ehk=4IBRCuarchEhiByl%2b5OPbaZ5blNnRIQt4u%2f0W6M8Gfs%3d&risl=&pid=ImgRaw&r=0" class="logo-carrusel"> 
+            <img src="https://parapharmacie.tn/wp-content/uploads/2021/09/isdin-logo_1200x1200.png" class="logo-carrusel"> 
+            <img src="https://logos-world.net/wp-content/uploads/2020/12/Eucerin-Logo.png" class="logo-carrusel">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Bioderma-Logo.png" class="logo-carrusel">        
+        </div> 
+    </div> 
+  </div>
+
+    <div class="contenedor"> 
+    <div class="seccion"> 
+      <h2>¡Contáctanos!</h2> 
+      <p> 
+       Para más información sobre nuestros productos, alianzas o sugerencias, puedes contactarnos a través de:</p> 
+       <p><strong>Glowfemme.contacto@gmail.com</strong></p>
+       <p>O también a tráves de nuestra página oficial de instagram: <strong><a href="https://instagram.com/glowfemme._" class="glowinsta">@Glowfemme._</a></strong></p>
+    </div>
+
+    <!--Información de pie de página --> 
+    <footer class="piedepagina"> 
+                <div class="links"> 
+                    <div class="marca"> 
+                        <img src="imgp/kattya/logotranspa.png">
+                        <h2> El arte de cuidar tu piel </h2> 
+       </div> 
+        <div class="menu2"> 
+    <ul> 
+  <li><a href="index.html"> Inicio </a></li> 
+  <li><a href="productos.html"> Más vendidos </a></li> 
+  <li><a href="acné.html"> Productos contra el acné </a></li> 
+  <li><a href="productospielgrasa.html"> Productos para piel grasa</a></li> 
+  <li><a href="consejos.html"> Consejos</a></li>
+  <li><a href="somos.html"> ¿Quiénes somos? </a></li>  
+    </ul>
+        </div> 
+      </div>
+      <div class="copyright"> 
+  <h1> Copyright 2025 GlowFemme </h1> 
+      </div> 
+    </footer> 
+
+</body> 
+</html> 

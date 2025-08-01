@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos para piel grasa</title>
+  <style>
+    /*Todo el diseño del menú*/
+    .menu {
+      background-color: #ffb8e0;
+      display: flex;
+      align-items: center;
+      padding: 20px 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 120px;
+      height: 70px;
+    }
+
+    .menu ul {
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .menu a:hover {
+      font-weight: 900;
+      color: black;
+    }
+
+    /* Estilo general del cuerpo */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #ffedfa;
+    }
+
+    /* Contenedor principal de productos */
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      flex-wrap: wrap;
+      margin-top: 150px;
+    }
+
+    /* Tarjeta de cada producto */
+    .producto {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Imagen del producto */
+    .producto img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Título del producto */
+    .producto h3 {
+      margin: 20px 10px 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Descripción del producto */
+    .producto p {
+      margin: 0 20px 20px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Botón de precio */
+    .btn {
+      background-color: #be5985;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 20px;
+      margin: 0 20px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ec7fa9;
+    }
+
+    /* Pie de página */
+    .piedepagina {
+      background-color: #ffb8e0;
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 60px;
+    }
+
+    .marca img {
+      width: 220px;
+      height: 150px;
+    }
+
+    .marca h2 {
+      font-size: 17px;
+      color: #0e0d0d;
+      margin: 0;
+      padding-left: 26px;
+    }
+
+    .menu2 ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu2 li {
+      margin-bottom: 10px;
+    }
+
+    .menu2 a {
+      text-decoration: none;
+      color: #0e0d0d;
+      font-size: 16px;
+    }
+
+    .menu2 a:hover {
+      font-weight: 900;
+      color: black;
+    }
+
+    .copyright {
+      background-color: #be5985;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .copyright h1 {
+      font-size: 20px;
+      color: #FFEDFA;
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .links {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .marca img {
+        width: 180px;
+        height: auto;
+      }
+
+      .marca h2 {
+        font-size: 16px;
+        padding-left: 0;
+        margin-top: 10px;
+      }
+
+      .menu2 ul {
+        margin-top: 20px;
+      }
+
+      .menu2 li {
+        margin-bottom: 8px;
+      }
+
+      .menu2 a {
+        font-size: 15px;
+      }
+
+      .copyright h1 {
+        font-size: 16px;
+      }
+
+      .contenedor {
+        gap: 30px;
+        padding: 0 10px;
+      }
+
+      body {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENÚ SUPERIOR -->
+  <div class="menu">
+    <img src="imgp/kattya/logotranspa.png" class="logo" alt="Logo GlowFemme">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Más vendidos</a></li>
+      <li><a href="acné.html">Productos contra el acné</a></li>
+      <li><a href="productospielgrasa.html">Productos para piel grasa</a></li>
+      <li><a href="consejos.html">Consejos</a></li>
+      <li><a href="somos.html">¿Quiénes somos?</a></li>
+    </ul>
+  </div>
+
+  <!-- Contenedor de todos los productos -->
+  <div class="contenedor">
+
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/Imagen.png" alt="Cleanance Agua Micelar">
+      <h3>Cleanance Agua Micelar 400 mL</h3>
+      <p>Ayuda a reducir el exceso de grasa y brillos de las pieles con tendencia a imperfecciones.</p>
+      <a href="producto1.html" class="btn">Comprar</a>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen2.png" alt="Salises Gel Hidratante">
+      <h3>Salises Gel Hidratante 50 mL</h3>
+      <p>Ayuda a la prevención y tratamiento de pieles (mixtas/grasas) con tendencia acneica.</p>
+      <button class="btn">$50.49</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen3.png" alt="STOP AKN crema hidratante">
+      <h3>Crema Hidratante Matificante STOP AKN 50 mL</h3>
+      <p>Gel refrescante que elimina impurezas y controla el exceso de grasa sin irritar la piel.</p>
+      <button class="btn">$37.62</button>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen15.jpg" alt="CeraVe Foaming Cleanser">
+      <h3>CeraVe Foaming Cleanser</h3>
+      <p>Limpiador en espuma, ideal para eliminar el exceso de grasa.</p>
+      <button class="btn">$32.01</button>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen6.jpg" alt="COSRX Low pH Gel Cleanser">
+      <h3>COSRX Low pH Good Morning Gel Cleanser</h3>
+      <p>Gel suave, equilibrante.</p>
+      <button class="btn">$14.34</button>
+    </div>
+
+    <!-- Producto 6 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen8.jpg" alt="Loción Exfoliante BHA">
+      <h3>Loción Exfoliante Skin Perfecting 2% BHA</h3>
+      <p>Textura líquida que elimina células muertas y mejora el aspecto de la piel.</p>
+      <button class="btn">$42.41</button>
+    </div>
+
+    <!-- Producto 7 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen9.avif" alt="Garnier Té verde matificante">
+      <h3>Garnier Té verde hidratante matificante</h3>
+      <p>Crema facial que reequilibra y matifica la piel reduciendo brillos.</p>
+      <button class="btn">$16.32</button>
+    </div>
+
+    <!-- Producto 8 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen10.avif" alt="ISDIN Acniben 2">
+      <h3>ISDIN Acniben 2</h3>
+      <p>Crema facial que reduce imperfecciones y matifica el cutis.</p>
+      <button class="btn">$20.92</button>
+    </div>
+
+    <!-- Producto 9 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen12.webp" alt="Effaclar Gel Limpiador">
+      <h3>Effaclar Gel Limpiador Espumoso Purificante</h3>
+      <p>Elimina suavemente impurezas y exceso de grasa.</p>
+      <button class="btn">$22.99</button>
+    </div>
+
+    <!-- Producto 10 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen13.jpg" alt="Cetaphil Foam Wash">
+      <h3>Cetaphil Pro Oil Removing Foam Wash</h3>
+      <p>Remueve grasa sin resecar ni irritar la piel.</p>
+      <button class="btn">$28.48</button>
+    </div>
+
+    <!-- Producto 11 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen14.webp" alt="Neutrogena Hydro Boost">
+      <h3>Neutrogena Hydro Boost Water Gel</h3>
+      <p>Hidrata intensamente sin sensación grasosa.</p>
+      <button class="btn">$17.00</button>
+    </div>
+
+    <!-- Producto 12 -->
+    <div class="producto">
+      <img src="imgp/Nimsi/imagen15.jpg" alt="Biore UV Aqua Rich protector solar">
+      <h3>Biore UV Aqua Rich</h3>
+      <p>Protector solar en gel acuoso, ultraligero y sin grasa.</p>
+      <button class="btn">$13.59</button>
+    </div>
+
+  </div>
+
+   <!-- Información de pie de página-->
+  <footer class="piedepagina">
+    <div class="links">
+      <div class="marca">
+        <img src="imgp/kattya/logotranspa.png" alt="Logo GlowFemme">
+        <h2>El arte de cuidar tu piel</h2>
+      </div>
+
+      <div class="menu2">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Más vendidos</a></li>
+          <li><a href="acné.html">Productos contra el acné</a></li>
+          <li><a href="productospielgrasa.html">Productos para piel grasa</a></li>
+          <li><a href="consejos.html">Consejos</a></li>
+          <li><a href="somos.html">¿Quiénes somos?</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <h1>Copyright 2025 GlowFemme</h1>
+    </div>
+  </footer>
+
+</body>
+</html>
